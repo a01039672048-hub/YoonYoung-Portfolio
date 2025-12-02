@@ -1,0 +1,76 @@
+.capabilities-section {
+    padding: 8rem 4rem;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.capabilities-header h2 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+    margin: 0;
+}
+
+.capabilities-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.capability-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    cursor: pointer;
+    transition: padding 0.3s ease;
+}
+
+.capability-item:hover {
+    padding: 2rem 1rem;
+}
+
+.service-name {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    transition: transform 0.3s ease;
+}
+
+.service-arrow {
+    font-size: 2rem;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.3s ease;
+}
+
+.capability-item:hover .service-name {
+    transform: translateX(10px);
+    color: #646cff;
+    /* Accent color on hover? Or just keep it monochrome */
+}
+
+/* Let's stick to monochrome for "sexy" look, maybe just opacity change or slight color shift */
+.capability-item:hover .service-name {
+    color: var(--color-text);
+}
+
+.capability-item:hover .service-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .capabilities-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .service-name {
+        font-size: 2rem;
+    }
+}

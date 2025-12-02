@@ -1,0 +1,14 @@
+.layout {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    overflow: hidden;
+}
+
+.main-content {
+    padding-top: 80px;
+    /* Space for navbar */
+    min-height: 100vh;
+}

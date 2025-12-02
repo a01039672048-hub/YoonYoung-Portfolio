@@ -1,0 +1,24 @@
+/* Typography Styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.text-hero {
+    font-size: clamp(3rem, 10vw, 8rem);
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+.text-body {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+}
